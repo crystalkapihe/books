@@ -16,7 +16,10 @@ Route::get('/', function () {
 });
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
 Route::resource('books', 'BookController');
 Route::resource('authors', 'AuthorController');
 Route::post('add/{id}', 'BookController@add');
+
+Route::get('list', 'BookListController@index');
+Route::get('manage', 'BookListController@manage');
+Route::post('manage', 'BookListController@update');

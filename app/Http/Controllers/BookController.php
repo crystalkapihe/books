@@ -22,7 +22,7 @@ class BookController extends Controller
     }
     public function index()
     {
-        $books = Book::paginate(15);
+        $books = Book::paginate(10);
         return view('books.index', compact('books'));
     }
 
@@ -79,6 +79,6 @@ class BookController extends Controller
         if (!$book->users->contains($userID)) {
             $book->users()->attach($userID);
         }
-        return redirect('home');
+        return redirect('list');
     }
 }
