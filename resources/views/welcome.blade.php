@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Your Application's Landing Page.
+                    Please use the navigation menu at the top of the page to navigate this site
                 </div>
             </div>
         </div>
